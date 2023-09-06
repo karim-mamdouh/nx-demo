@@ -1,0 +1,19 @@
+<form
+  [formGroup]="form"
+  class="flex flex-col gap-4 w-1/2 mx-auto"
+  (submit)="submitForm()"
+>
+  <div class="flex gap-3 items-center">
+    <label>Name:</label>
+    <input formControlName="name" class="px-3 py-2 border rounded" />
+  </div>
+  <div class="flex gap-3 items-center">
+    <label>Position:</label>
+    <input formControlName="position" class="px-3 py-2 border rounded" />
+  </div>
+  <div class="flex gap-3 items-center">
+    <label>Access Level:</label>
+    <input formControlName="accessLevel" class="px-3 py-2 border rounded" />
+  </div>
+  <workspace-button label="Add Admin" class="mx-auto" type="submit" />
+</form>

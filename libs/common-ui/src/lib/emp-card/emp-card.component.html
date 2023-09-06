@@ -1,0 +1,4 @@
+<p class="text-xl">Name: {{ emp.name }}</p>
+<p>ID: {{ emp.id }}</p>
+<p>Position: {{ emp.position }}</p>
+<p *ngIf="isAdmin()">Access: {{ $any(emp).accessLevel }}</p>

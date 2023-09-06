@@ -1,0 +1,6 @@
+<router-outlet></router-outlet>
+<ng-container *ngIf="emps | async as emps">
+  <div class="">
+    <workspace-emp-card *ngFor="let emp of emps" [emp]="emp" />
+  </div>
+</ng-container>

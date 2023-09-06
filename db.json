@@ -1,0 +1,34 @@
+{
+  "emps": [
+    {
+      "name": "Karim",
+      "id": 12,
+      "position": "Frontend"
+    },
+    {
+      "name": "Mamdouh",
+      "id": 11,
+      "position": "Frontend"
+    }
+  ],
+  "admins": [
+    {
+      "name": "Mohamed",
+      "id": 11,
+      "position": "CEO",
+      "acessLevel": 0
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "name": "adsa",
+      "position": "sdsa",
+      "accessLevel": "sda",
+      "id": 14
+    }
+  ]
+}

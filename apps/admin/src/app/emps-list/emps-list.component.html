@@ -1,0 +1,21 @@
+<h1 class="text-center text-2xl my-8">List of Admins</h1>
+<ng-container *ngIf="admins | async as admins">
+  <div class="flex items-center px-5" *ngFor="let admin of admins">
+    <figure class="w-[5%] border rounded-full mr-5 h-fit">
+      <img
+        class="max-w-full"
+        src="https://cdn-icons-png.flaticon.com/512/2815/2815428.png"
+      />
+    </figure>
+
+    <workspace-emp-card [emp]="admin" class="w-[80%]" />
+    <div class="flex flex-col">
+      <button
+        class="p-3 bg-red-500 text-white rounded w-full"
+        (click)="deleteUser(admin)"
+      >
+        Delete
+      </button>
+    </div>
+  </div>
+</ng-container>
